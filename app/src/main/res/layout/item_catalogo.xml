@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="8dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp">
+
+
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white">
+
+            <ImageView
+                android:id="@+id/img_item_catalogo"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="3dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:minHeight="100dp"
+                android:minWidth="100dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/cafes1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <!--<com.akexorcist.roundcornerprogressbar.IconRoundCornerProgressBar-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginEnd="8dp"-->
+            <!--android:layout_marginStart="8dp"-->
+            <!--android:layout_marginTop="8dp"-->
+            <!--app:layout_constraintEnd_toEndOf="@+id/textView4"-->
+            <!--app:layout_constraintHorizontal_bias="0.0"-->
+            <!--app:layout_constraintStart_toEndOf="@+id/imageView4"-->
+            <!--app:layout_constraintTop_toBottomOf="@+id/textView4"-->
+            <!--app:rcBackgroundColor="@color/colorPrimary"-->
+            <!--app:rcBackgroundPadding="2dp"-->
+            <!--app:rcIconBackgroundColor="@color/colorPrimaryDark"-->
+            <!--app:rcIconPadding="5dp"-->
+            <!--app:rcIconSize="40dp"-->
+            <!--app:rcMax="150"-->
+            <!--app:rcProgress="90"-->
+            <!--app:rcProgressColor="@color/colorAccent"-->
+            <!--app:rcRadius="5dp" />-->
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_coffees1"
+                app:layout_constraintBottom_toBottomOf="@+id/img_item_catalogo"
+                app:layout_constraintStart_toEndOf="@+id/img_item_catalogo" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/ic_coffees2"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imageView5" />
+
+            <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+                android:id="@+id/progress_catalog"
+                android:layout_width="0dp"
+                android:layout_height="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+                app:layout_constraintEnd_toStartOf="@+id/imageView6"
+                app:layout_constraintStart_toEndOf="@+id/imageView5"
+                app:layout_constraintTop_toTopOf="@+id/imageView5"
+                app:rcBackgroundColor="@color/brown_100"
+                app:rcBackgroundPadding="2dp"
+                app:rcMax="100"
+                app:rcProgress="50"
+                app:rcProgressColor="@color/colorPrimaryDark"
+                app:rcRadius="5dp">
+
+            </com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar>
+
+            <TextView
+                android:id="@+id/txt_title_item_catalogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Cafe 1"
+                android:textColor="@color/black_text"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/img_item_catalogo"
+                app:layout_constraintTop_toTopOf="@+id/img_item_catalogo" />
+
+            <TextView
+                android:id="@+id/txt_descripcion_item_catalogo"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. "
+                android:textColor="@color/black_text_secondary"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toTopOf="@+id/imageView5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/img_item_catalogo"
+                app:layout_constraintTop_toBottomOf="@+id/txt_title_item_catalogo" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+
+</android.support.v7.widget.CardView>

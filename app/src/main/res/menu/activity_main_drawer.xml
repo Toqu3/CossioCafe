@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_catalogo"
+            android:icon="@drawable/ic_catalogo"
+            android:title="catalog" />
+        <item
+            android:id="@+id/nav_carrito"
+            android:icon="@drawable/ic_carrito"
+            android:title="car" />
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_cuenta"
+                android:icon="@drawable/ic_account_circle_black_24dp"
+                android:title="account" />
+        </menu>
+    </item>
+
+</menu>

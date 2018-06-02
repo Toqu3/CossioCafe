@@ -1,0 +1,5 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <item name="ic_catalogo" type="drawable">@drawable/ic_book_black_24dp</item>
+    <item name="ic_carrito" type="drawable">@drawable/ic_shopping_cart_black_24dp</item>
+    <item name="ic_cuenta" type="drawable">@drawable/ic_account_circle_black_24dp</item>
+</resources>
